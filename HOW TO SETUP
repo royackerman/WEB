@@ -1,0 +1,39 @@
+1. להוריד ולהתקין node וויזואל סטודיו
+2. להריץ בתיקיה שנרצה לעבוד בה: npm init
+זה ייצור לנו איפשהו קובץ package והעתיקו לתיקיית העבודה.
+3. להתקין אקספרס: npm install express
+4. ואז npm i mongodb
+5. ואז npm i react react-dom
+6. ואז npm i -D webpack webpack-cli
+7. ואז npm i -D babel-loader @babel/cli @babel/core @babel/preset-env @babel/preset-react @babel/plugin-proposal-class-properties
+8.ואז npm i -D nodemon
+9.ואז npm i -D eslint babel-eslint eslint-plugin-react
+10. ואז npm i prop-types
+---------------------------------------------------------------------------------------------------------------------------
+או לחילופין:
+אפשר פשוט להעתיק את כל הקבצים מפה ולהדביק בתיקייה הראשית של האתר שלנו (web):
+https://github.com/jscomplete/learn-fullstack-javascript/tree/v1.2
+ואז להריץ כאשר אנחנו בתוך התיקייה:
+npm i
+וזה יתקין את ה-dependencies לפי הקובץ.
+---------------------------------------------------------------------------------------------------------------------------
+
+אפשר להגדיר את:
+/home/roy/Desktop/web/./node_modules/.bin
+כמשתנה סביבה ואז נוכל להריץ את השרת בפקודה קצרה:
+babel-node server.js
+
+
+לאחר מכן לצורך שימוש ב-EJS יש להיכנס לתיקיית האתר ולהתקין מהטרמינל:
+npm i -S ejs
+
+לאחר מכן יש להיכנס לתיקיה הראשית של האתר שבה קובץ השרת ולהריץ (כדי להתקין חבילת שליחת תמונות):
+npm i multer
+
+----------------------------------------------------------------------------------------------------------------------------
+אם הכל טוב זה אמור להריץ את השרת שלנו:
+1. Open new Terminal and run from the web folder: npm run dev
+2. Open additional Terminal and run from the web folder: ./node_modules/.bin/babel-node server.js
+11. בשביל להישתמש ולעבוד עם JSON לא צריך לעדכן את קובץ ה-webpack, רק להתקין את npm i -S json-loader בתיקיית האתר.
+12. כדי לעבוד עם sass יש להתקין את npm i -S node-sass-middleware בתיקיית האתר web.
+
